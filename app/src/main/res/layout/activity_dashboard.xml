@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:padding="32dp">
+<LinearLayout
+    android:id="@+id/layout_login"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_centerInParent="true">
+    <Button
+        android:id="@+id/dashbord_user_profile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="پروفایل کاربری"
+        android:layout_marginTop="16dp"
+        android:textSize="18sp"
+        />
+    <Button
+        android:id="@+id/dashbord_amar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="آمار کلی"
+        android:layout_marginTop="16dp"
+        android:textSize="18sp"
+        />
+</LinearLayout>
+
+
+
+</RelativeLayout>

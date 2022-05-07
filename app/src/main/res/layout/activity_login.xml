@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:padding="32dp"
+
+  >
+    <ImageView
+        android:layout_width="match_parent"
+        android:src="@drawable/back"
+        android:layout_height="200dp"
+      android:layout_alignParentTop="true"
+        android:scaleType="centerCrop"
+       />
+<LinearLayout
+    android:id="@+id/layout_login"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_centerInParent="true">
+
+
+        <EditText
+            android:id="@+id/login_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="نام کاربری"
+            android:padding="16dp"
+            android:layout_marginBottom="16dp"/>
+    <EditText
+        android:id="@+id/login_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="رمز عبور"
+        android:inputType="textEmailAddress"
+        android:padding="16dp"/>
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/login_btn_log"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ورود"
+        android:layout_marginTop="16dp"
+        android:textSize="18sp" />
+
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/layout_login"
+        android:gravity="center"
+        android:layout_marginTop="32dp">
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/login_btn_reg"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:text="ثبت نام"
+            android:layout_marginEnd="16dp"
+            android:textSize="18sp"/>
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/login_btn_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:text="تماس با ما"
+
+            android:layout_marginEnd="16dp"
+            android:textSize="18sp"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/login_btn_forget"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:text="فراموشی رمز"
+            android:textSize="18sp"/>
+    </LinearLayout>
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/login_btn_admin_login"
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:text="ورود مدیر"
+        android:textSize="18sp"
+       android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"/>
+</RelativeLayout>
